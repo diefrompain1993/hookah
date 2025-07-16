@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Напитки | HookahPlace</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/tea_block.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_container">
+        <div class="header_logo">
+          <h1>HookahPlace</h1>
+        </div>
+        <div class="header_items">
+          <div class="header_item">
+            <a href="rules.html">Правила</a>
+          </div>
+          <div class="header_item">
+            <a href="#contacts">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="tea_section">
+      <h1 class="tea_title">Чай</h1>
+
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="tea">Чай</button>
+        <button class="category-tab" data-category="lemonade">Лимонад</button>
+        <button class="category-tab" data-category="cork">Пробковый сбор</button>
+      </div>
+
+      <div class="products_tea_container" id="tea" style="display: flex;">
+        <div class="product_tea_card">
+          <img src="images/tee_two.png" alt="Чай на компанию" class="product_image">
+          <div class="product_text">
+            <h2>Чай на компанию – 1л. / 300 ₽</h2>
+            <p><strong>Черный:</strong> Ассам, 1001 ночь, Наглый фрукт, Дикая вишня, Эрл Грей, С чабрецом</p>
+            <p><strong>Зелёный:</strong> С жасмином, Альпийский луг, Зелёная улитка</p>
+          </div>
+        </div>
+
+        <div class="product_tea_card">
+          <img src="images/tea.png" alt="Китайский чай" class="product_image">
+          <div class="product_text">
+            <h2>Китайский чай – 400 ₽</h2>
+            <p>Шу Пуэр (16 лет) </p> <p> Шен Пуэр (16 лет) </p> <p>Да Хун Пао </p> <p>Те Гуань Инь</p> <p> Молочный улун</p>
+          </div>
+        </div>
+
+        <div class="product_tea_card">
+          <img src="images/tea_three.png" alt="Авторский чай" class="product_image">
+          <div class="product_text">
+            <h2>Авторский чай 450 ₽</h2>
+            <p>Кислая вишня</p>
+            <p>Яблоко - корица</p>
+            <p>Цитрусовый</p>
+            <p>Ягодный</p>
+            <p>Пряный манго</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="products_container" id="lemonade" style="display: none;">
+        <div class="products_container">
+              <div class="product_card">
+                <img src="images/лимонад.png" alt="Лимонады" class="product_image">
+                    <div class="product_text">
+                        <h2>Лимонады – 250 ₽ (0.4л) / 700 ₽ (1.2л)</h2>
+                        <p>Черника – лаванда</p>
+                        <p>Манго – маракуйя</p>
+                        <p>Пало санто – банан</p>
+                        <p>Ежевика – гранат</p>
+                        <p>Апельсин – ваниль</p>
+                        <p>Лемонграсс – ананас</p>
+                        <p>Вишня – шисо</p>
+                        <p>Малина – пан</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <img src="images/water.png" width="200" alt="Газ / не газ вода" class="product_image">
+                <div class="product_text">
+                        <h2>Газ / не газ вода – 150 ₽</h2>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <img src="images/juice.png" alt="Сок" class="product_image">
+                <div class="product_text">
+                    <h2>Сок – 150 ₽</h2>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <img src="images/coca_cola.png" alt="Газировка" class="product_image">
+                <div class="product_text">
+                    <h2>Газировка (Кола, Фанта, Спрайт) – 150 ₽</h2>
+                </div>
+            </div>
+
+            <div class="product_card">
+                <img src="images/red_bull.png" alt="Ред Бул" class="product_image">
+                <div class="product_text">
+                    <h2>Red Bull – 250 ₽</h2>
+                </div>
+            </div>
+      </div>
+
+      <div class="products_container" id="cork" style="display: none;">
+        <div class="product_card">
+          <img src="images/beer.png" alt="Пробковый сбор" class="product_image">
+          <div class="product_text">
+            <h2>Пробковый сбор</h2>
+            <p><strong>Пиво:</strong> 50 ₽ – за 0.5 л</p>
+            <p><strong>Безалкогольные напитки:</strong> 50 ₽ – за 0.5 л</p>
+            <p><strong>Лёгкий алкоголь:</strong> 350 ₽ – за бутылку</p>
+            <p><strong>Крепкий алкоголь:</strong> 550 ₽ – за бутылку до 1 л</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+      <div class="footer_container">
+        <div class="footer_info">
+          <h2>HookahPlace</h2>
+          <p>ул. Маяковского, 8</p>
+          <a href="https://yandex.ru/navi/org/hookahplace/105455396878?si=k57he8zaqubq9h4bryv5he3kxc" target="_blank" rel="noopener noreferrer">
+            Открыть в Яндекс Картах
+          </a>
+        </div>
+        <div class="footer_socials">
+          <a href="https://vk.com/hpsevas" target="_blank" aria-label="VK">
+            <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="VK" width="28">
+          </a>
+          <a href="https://www.instagram.com/hookahplacesevas?igsh=cjg5Z2R4MGpidHQ=" target="_blank" aria-label="Instagram">
+            <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram" width="28">
+          </a>
+          <a href="https://t.me/hpsevas" target="_blank" aria-label="Telegram">
+            <img src="https://www.svgrepo.com/show/452115/telegram.svg" alt="Telegram" width="28">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll(".category-tab");
+    const containers = {
+      tea: document.getElementById("tea"),
+      lemonade: document.getElementById("lemonade"),
+      cork: document.getElementById("cork")
+    };
+    const title = document.querySelector(".tea_title");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const category = tab.dataset.category;
+        Object.entries(containers).forEach(([key, el]) => {
+          el.style.display = (key === category) ? "flex" : "none";
+        });
+
+        title.textContent = tab.textContent;
+      });
+    });
+  </script>
+</body>
+</html>
