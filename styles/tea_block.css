@@ -21,7 +21,7 @@
 }
 
 .product_card {
-  background-color: rgba(0, 0, 0, 0.765); 
+  background-color: rgba(0, 0, 0, 0.765);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
@@ -42,7 +42,7 @@
 }
 
 .product_tea_card {
-  background-color: rgba(0, 0, 0, 0.765); 
+  background-color: rgba(0, 0, 0, 0.765);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
@@ -55,12 +55,13 @@
   backdrop-filter: blur(4px);
 }
 
-
-.product_tea_card img {
+.product_tea_card img,
+.product_tea_card video {
   width: 250px;
-  height: auto;
+  height: 250px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
 
 .product_card:hover {
@@ -81,13 +82,20 @@
   font-size: 20px;
   margin-bottom: 10px;
   color: #ffffff;
+  text-align: center;
 }
 
 .product_text p {
   font-size: 15px;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
   line-height: 1.5;
   color: #cbd5e1;
+}
+
+.product_text p strong {
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 
 .category-tabs {
@@ -98,7 +106,7 @@
 }
 
 .category-tab {
-  background-color: rgba(255,255,255,0.08);
+  background-color: rgba(255, 255, 255, 0.08);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -114,13 +122,23 @@
   color: #000;
 }
 
-@media (max-width: 550px){
-  .product_tea_card{
+@media (max-width: 550px) {
+  .product_tea_card {
     flex-wrap: wrap;
   }
 
-  .product_tea_card img{ 
+  .product_tea_card img,
+  .product_tea_card video {
     width: 100%;
+    height: auto;
   }
 }
 
+/* Центрируем только списки с чёрным/зелёным чаем */
+.tea-varieties {
+  text-align: center;
+}
+
+.bear-varies{
+  text-align: center;
+}

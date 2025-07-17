@@ -1,4 +1,13 @@
 /* reset styles */
+
+/* @font-face {
+    font-family: 'Poiret One';
+    src: url('../fonts/Poiret One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +18,7 @@
 body {
   position: relative;
   line-height: 1.5;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Poiret One', sans-serif;
   background-color: rgba(40, 40, 40, 0.95);
 
  
@@ -63,7 +72,7 @@ li {
 
 
 * {
-  font-family: "Manrope", sans-serif;
+  font-family: "Poiret One", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -80,14 +89,14 @@ li {
 
 
 h1 {
-    font-family: 'Manrope', serif;
+    font-family: 'Poiret One', serif;
     font-weight: 600;
 
     font-size: clamp(1rem, 9.5vw, 2.5rem);
 }
 
 h2 {
-    font-family: 'Manrope', serif;
+    font-family: 'Poiret One', serif;
     font-weight: 600;
 
     font-size: clamp(0.5rem, 7vw, 3.3rem);
@@ -96,12 +105,12 @@ h2 {
 
 
 p {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poiret One', sans-serif;
 }
 
 a{
     font-size: clamp(0.5rem, 3.5vw, 1.2rem);
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poiret One', sans-serif;
 }
 
 
