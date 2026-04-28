@@ -12,15 +12,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header_container">
-        <a  class="header_logo">
-          <img src="./images/logo.png" alt="">
+        <a href="index.html" class="header_logo">
+          <img src="./images/logo.png" alt="" decoding="async">
         </a>
         <div class="header_items">
           <div class="header_item">
@@ -44,7 +44,7 @@
 
       <div class="products_tea_container" id="tea" style="display: flex;">
         <div class="product_tea_card">
-          <img src="images/tea_three.png" alt="Чай на компанию" class="product_image">
+          <img src="images/tea_three.png" alt="Чай на компанию" class="product_image" decoding="async" fetchpriority="high">
           <div class="product_text">
             <h2>Чай на компанию – 1л. / 400 ₽</h2>
             <p class="tea-varieties"><strong>Черный:</strong> Ассам, 1001 ночь, Наглый фрукт, Дикая вишня, Эрл Грей, С чабрецом</p>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="product_tea_card">
-          <video src="images/chinise_tea.mp4" class="product_image" autoplay loop muted playsinline>
+          <video data-src="images/chinise_tea.mp4" class="product_image" autoplay loop muted playsinline preload="metadata">
           </video>
           <div class="product_text">
             <h2>Китайский чай – 500 ₽</h2>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="product_tea_card">
-          <video src="images/firm_tea.mp4" class="product_image" autoplay loop muted playsinline>
+          <video data-src="images/firm_tea.mp4" class="product_image" autoplay loop muted playsinline preload="metadata">
           </video>
           <div class="product_text">
             <h2>Авторский чай 600 ₽</h2>
@@ -82,7 +82,7 @@
       <div class="products_container" id="lemonade" style="display: none;">
         <div class="products_container">
           <div class="product_card">
-            <img src="images/лимонад.png" alt="Лимонады" class="product_image">
+            <img src="images/лимонад.png" alt="Лимонады" class="product_image" loading="lazy" decoding="async">
             <div class="product_text">
               <h2>Лимонады – 300 ₽ (0.4л) / 800 ₽ (1.2л)</h2>
               <p>Черника – лаванда</p>
@@ -98,28 +98,28 @@
         </div>
 
         <div class="product_card">
-          <img src="images/water.png" width="200" alt="Газ / не газ вода" class="product_image">
+          <img src="images/water.png" width="200" alt="Газ / не газ вода" class="product_image" loading="lazy" decoding="async">
           <div class="product_text">
             <h2>Газ / не газ вода – 150 ₽</h2>
           </div>
         </div>
 
         <div class="product_card">
-          <img src="images/juice.png" alt="Сок" class="product_image">
+          <img src="images/juice.png" alt="Сок" class="product_image" loading="lazy" decoding="async">
           <div class="product_text">
             <h2>Сок – 150 ₽</h2>
           </div>
         </div>
 
         <div class="product_card">
-          <img src="images/coca_cola.png" alt="Газировка" class="product_image">
+          <img src="images/coca_cola.png" alt="Газировка" class="product_image" loading="lazy" decoding="async">
           <div class="product_text">
             <h2>Газировка (Кола, Фанта, Спрайт) – 150 ₽</h2>
           </div>
         </div>
 
         <div class="product_card">
-          <img src="images/red_bull.png" alt="Ред Бул" class="product_image">
+          <img src="images/red_bull.png" alt="Ред Бул" class="product_image" loading="lazy" decoding="async">
           <div class="product_text">
             <h2>Red Bull – 250 ₽</h2>
           </div>
@@ -128,7 +128,7 @@
 
       <div class="products_container" id="cork" style="display: none;">
         <div class="product_card">
-          <img src="images/beer.png" alt="Пробковый сбор" class="product_image">
+          <img src="images/beer.png" alt="Пробковый сбор" class="product_image" loading="lazy" decoding="async">
           <div class="product_text">
             <h2>Пробковый сбор</h2>
             <p class="bear-varies"><strong>Пиво:</strong> 50 ₽ – за 0.5 л</p>
@@ -155,14 +155,14 @@
         </div>
         <div class="footer_socials">
           <a href="https://vk.com/hpsevas" target="_blank" aria-label="VK">
-            <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="VK" width="28">
+            <img src="https://www.svgrepo.com/show/349554/vk.svg" alt="VK" width="28" loading="lazy" decoding="async">
           </a>
           <a href="https://www.instagram.com/hookahplacesevas?igsh=cjg5Z2R4MGpidHQ=" target="_blank"
             aria-label="Instagram">
-            <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram" width="28">
+            <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram" width="28" loading="lazy" decoding="async">
           </a>
           <a href="https://t.me/hpsevas" target="_blank" aria-label="Telegram">
-            <img src="https://www.svgrepo.com/show/452115/telegram.svg" alt="Telegram" width="28">
+            <img src="https://www.svgrepo.com/show/452115/telegram.svg" alt="Telegram" width="28" loading="lazy" decoding="async">
           </a>
         </div>
 
@@ -179,6 +179,30 @@
       cork: document.getElementById("cork")
     };
     const title = document.querySelector(".tea_title");
+    const lazyVideos = document.querySelectorAll("video[data-src]");
+
+    const loadVideo = video => {
+      if (!video.src) {
+        video.src = video.dataset.src;
+        video.load();
+        video.play().catch(() => {});
+      }
+    };
+
+    if ("IntersectionObserver" in window) {
+      const videoObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            loadVideo(entry.target);
+            videoObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "250px" });
+
+      lazyVideos.forEach(video => videoObserver.observe(video));
+    } else {
+      lazyVideos.forEach(loadVideo);
+    }
 
     tabs.forEach(tab => {
       tab.addEventListener("click", () => {
